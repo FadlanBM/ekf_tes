@@ -1,0 +1,55 @@
+ekf_filter_node:
+  ros__parameters:
+    frequency: 30.0
+    sensor_timeout: 0.1
+    two_d_mode: true
+    transform_time_offset: 0.0
+    transform_timeout: 0.0
+    print_diagnostics: true
+    debug: false
+
+    # Apakah EKF node akan mem-publish transformasi dari odom_frame ke base_link_frame
+    publish_tf: true
+    publish_acceleration: false
+
+    # Frames konfigurasi
+    map_frame: map
+    odom_frame: odom
+    base_link_frame: base_footprint  # Sesuaikan dengan base link robot Anda (bisa juga 'base_link')
+    world_frame: odom
+
+    # ODOMETRY CONFIGURATION (Wheel Odometry)
+    # Ganti dengan nama topic odom robot Anda, misal /diff_cont/odom atau /odom
+    odom0: /odom
+    # Urutan array: [X, Y, Z,
+    #                roll, pitch, yaw,
+    #                X velocity, Y velocity, Z velocity,
+    #                roll velocity, pitch velocity, yaw velocity,
+    #                X acceleration, Y acceleration, Z acceleration]
+    odom0_config: [true, true, false,
+                   false, false, true,
+                   true, true, false,
+                   false, false, true,
+                   false, false, false]
+    odom0_queue_size: 10
+    odom0_nodelay: false
+    odom0_differential: false
+    odom0_relative: false
+
+    # IMU CONFIGURATION
+    # Ganti dengan nama topic IMU robot Anda
+    imu0: /imu/data
+    imu0_config: [false, false, false,
+                  true,  true,  true,
+                  false, false, false,
+                  true,  true,  true,
+                  true,  true,  true]
+    imu0_nodelay: false
+    imu0_differential: false
+    imu0_relative: true
+    imu0_queue_size: 10
+    imu0_pose_rejection_threshold: 0.8                 # Abaikan pose jika lebih dari ini
+    imu0_twist_rejection_threshold: 0.8                # Abaikan kecepatan jika lebih dari ini
+    imu0_linear_acceleration_rejection_threshold: 0.8  # Abaikan percepatan linear jika lebih dari ini
+
+    use_control: false
