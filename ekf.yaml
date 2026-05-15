@@ -26,8 +26,8 @@ ekf_filter_node:
     #                X velocity, Y velocity, Z velocity,
     #                roll velocity, pitch velocity, yaw velocity,
     #                X acceleration, Y acceleration, Z acceleration]
-    odom0_config: [true, true, false,
-                   false, false, true,
+    odom0_config: [false, false, false,
+                   false, false, false,
                    true, true, false,
                    false, false, true,
                    false, false, false]
