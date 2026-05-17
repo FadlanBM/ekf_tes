@@ -30,6 +30,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'odom_time_relay = ekf_tf_bringup.odom_time_relay:main',
         ],
     },
 )

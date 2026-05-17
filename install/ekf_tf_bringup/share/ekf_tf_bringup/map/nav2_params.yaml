@@ -58,8 +58,8 @@ local_costmap:
       height: 3
       resolution: 0.05
       # Based on your 72cm x 72cm dimensions
-      footprint: "[ [0.36, 0.36], [0.36, -0.36], [-0.36, -0.36], [-0.36, 0.36] ]"
-      plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
+      footprint: "[[0.36, 0.36], [0.36, -0.36], [-0.36, -0.36], [-0.36, 0.36]]"
+      plugins: ["obstacle_layer", "inflation_layer"]
       obstacle_layer:
         plugin: "nav2_costmap_2d::ObstacleLayer"
         enabled: True
@@ -70,6 +70,11 @@ local_costmap:
           clearing: True
           marking: True
           data_type: "LaserScan"
+      inflation_layer:
+        plugin: "nav2_costmap_2d::InflationLayer"
+        cost_scaling_factor: 3.0
+        inflation_radius: 0.55
+
 
 global_costmap:
   global_costmap:
@@ -80,7 +85,7 @@ global_costmap:
       robot_base_frame: base_link
       use_sim_time: False
       # Based on your 72cm x 72cm dimensions
-      footprint: "[ [0.36, 0.36], [0.36, -0.36], [-0.36, -0.36], [-0.36, 0.36] ]"
+      footprint: "[[0.36, 0.36], [0.36, -0.36], [-0.36, -0.36], [-0.36, 0.36]]"
       plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
       static_layer:
         plugin: "nav2_costmap_2d::StaticLayer"
@@ -114,4 +119,4 @@ planner_server:
 map_server:
   ros__parameters:
     use_sim_time: False
-    yaml_filename: "/home/heroes/Workspace/map_yaml/TES2.yaml"
+    yaml_filename: "/home/fadlan/Documents/EKF_TES/ekf_tf_bringup/map/TES.yaml"

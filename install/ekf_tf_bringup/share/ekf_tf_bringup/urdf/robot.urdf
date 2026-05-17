@@ -32,6 +32,15 @@
     <origin xyz="-0.18 0 0.66" rpy="0 0 3.14159"/> 
   </joint>
 
+  <!-- MERGED LIDAR FRAME -->
+  <link name="laser"/>
+  <joint name="merged_laser_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="laser"/>
+    <origin xyz="0 0 0.66" rpy="0 0 0"/> 
+  </joint>
+
+
   <!-- WHEEL MACRO (To keep things clean) -->
   <!-- Note: We define frames for wheels so EKF/Nav2 knows where they are -->
   

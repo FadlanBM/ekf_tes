@@ -44,7 +44,15 @@ def generate_launch_description():
         parameters=[{'robot_description': robot_desc}]
     )
 
-    launch_entities = [ekf_node, rsp_node]
+    # Relay node to sync odometry timestamps
+    odom_relay_node = Node(
+        package='ekf_tf_bringup',
+        executable='odom_time_relay',
+        name='odom_time_relay',
+        output='screen'
+    )
+
+    launch_entities = [ekf_node, rsp_node, odom_relay_node]
 
     # Nav2 Bringup Launch
     if nav2_bringup_dir:
@@ -58,7 +66,8 @@ def generate_launch_description():
             launch_arguments={
                 'map': map_yaml_file,
                 'params_file': nav2_params_file,
-                'use_sim_time': 'False'
+                'use_sim_time': 'False',
+                'use_composition': 'False'
             }.items()
         )
         launch_entities.append(nav2_bringup_launch)
