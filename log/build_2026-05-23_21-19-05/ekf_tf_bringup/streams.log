@@ -1,0 +1,21 @@
+[1.645s] Invoking command in '/home/heroes/Workspace/ekf_tes/ekf_tf_bringup': PYTHONPATH=/home/heroes/Workspace/ekf_tes/build/ekf_tf_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/ekf_tf_bringup build --build-base /home/heroes/Workspace/ekf_tes/build/ekf_tf_bringup/build install --record /home/heroes/Workspace/ekf_tes/build/ekf_tf_bringup/install.log --single-version-externally-managed install_data
+[2.302s] running egg_info
+[2.303s] writing ../build/ekf_tf_bringup/ekf_tf_bringup.egg-info/PKG-INFO
+[2.304s] writing dependency_links to ../build/ekf_tf_bringup/ekf_tf_bringup.egg-info/dependency_links.txt
+[2.304s] writing entry points to ../build/ekf_tf_bringup/ekf_tf_bringup.egg-info/entry_points.txt
+[2.304s] writing requirements to ../build/ekf_tf_bringup/ekf_tf_bringup.egg-info/requires.txt
+[2.305s] writing top-level names to ../build/ekf_tf_bringup/ekf_tf_bringup.egg-info/top_level.txt
+[2.309s] reading manifest file '../build/ekf_tf_bringup/ekf_tf_bringup.egg-info/SOURCES.txt'
+[2.311s] writing manifest file '../build/ekf_tf_bringup/ekf_tf_bringup.egg-info/SOURCES.txt'
+[2.311s] running build
+[2.311s] running build_py
+[2.312s] running install
+[2.312s] running install_lib
+[2.316s] running install_data
+[2.316s] copying map/TES.yaml -> /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/share/ekf_tf_bringup/map
+[2.317s] running install_egg_info
+[2.321s] removing '/home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/lib/python3.10/site-packages/ekf_tf_bringup-0.0.0-py3.10.egg-info' (and everything under it)
+[2.322s] Copying ../build/ekf_tf_bringup/ekf_tf_bringup.egg-info to /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/lib/python3.10/site-packages/ekf_tf_bringup-0.0.0-py3.10.egg-info
+[2.324s] running install_scripts
+[2.377s] writing list of installed files to '/home/heroes/Workspace/ekf_tes/build/ekf_tf_bringup/install.log'
+[2.449s] Invoked command in '/home/heroes/Workspace/ekf_tes/ekf_tf_bringup' returned '0': PYTHONPATH=/home/heroes/Workspace/ekf_tes/build/ekf_tf_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/ekf_tf_bringup build --build-base /home/heroes/Workspace/ekf_tes/build/ekf_tf_bringup/build install --record /home/heroes/Workspace/ekf_tes/build/ekf_tf_bringup/install.log --single-version-externally-managed install_data

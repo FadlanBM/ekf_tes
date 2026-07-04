@@ -1,0 +1,44 @@
+[1.635s] Invoking command in '/home/heroes/Workspace/ekf_tes/ekf_tf_bringup': PYTHONPATH=/home/heroes/Workspace/ekf_tes/build/ekf_tf_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/ekf_tf_bringup build --build-base /home/heroes/Workspace/ekf_tes/build/ekf_tf_bringup/build install --record /home/heroes/Workspace/ekf_tes/build/ekf_tf_bringup/install.log --single-version-externally-managed install_data
+[2.309s] running egg_info
+[2.311s] creating ../build/ekf_tf_bringup/ekf_tf_bringup.egg-info
+[2.313s] writing ../build/ekf_tf_bringup/ekf_tf_bringup.egg-info/PKG-INFO
+[2.314s] writing dependency_links to ../build/ekf_tf_bringup/ekf_tf_bringup.egg-info/dependency_links.txt
+[2.315s] writing entry points to ../build/ekf_tf_bringup/ekf_tf_bringup.egg-info/entry_points.txt
+[2.316s] writing requirements to ../build/ekf_tf_bringup/ekf_tf_bringup.egg-info/requires.txt
+[2.316s] writing top-level names to ../build/ekf_tf_bringup/ekf_tf_bringup.egg-info/top_level.txt
+[2.317s] writing manifest file '../build/ekf_tf_bringup/ekf_tf_bringup.egg-info/SOURCES.txt'
+[2.322s] reading manifest file '../build/ekf_tf_bringup/ekf_tf_bringup.egg-info/SOURCES.txt'
+[2.324s] writing manifest file '../build/ekf_tf_bringup/ekf_tf_bringup.egg-info/SOURCES.txt'
+[2.325s] running build
+[2.325s] running build_py
+[2.325s] creating /home/heroes/Workspace/ekf_tes/build/ekf_tf_bringup/build
+[2.326s] creating /home/heroes/Workspace/ekf_tes/build/ekf_tf_bringup/build/lib
+[2.326s] creating /home/heroes/Workspace/ekf_tes/build/ekf_tf_bringup/build/lib/ekf_tf_bringup
+[2.327s] copying ekf_tf_bringup/__init__.py -> /home/heroes/Workspace/ekf_tes/build/ekf_tf_bringup/build/lib/ekf_tf_bringup
+[2.328s] running install
+[2.329s] running install_lib
+[2.331s] creating /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/lib/python3.10/site-packages/ekf_tf_bringup
+[2.332s] copying /home/heroes/Workspace/ekf_tes/build/ekf_tf_bringup/build/lib/ekf_tf_bringup/__init__.py -> /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/lib/python3.10/site-packages/ekf_tf_bringup
+[2.334s] byte-compiling /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/lib/python3.10/site-packages/ekf_tf_bringup/__init__.py to __init__.cpython-310.pyc
+[2.335s] running install_data
+[2.335s] creating /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/share/ament_index
+[2.336s] creating /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/share/ament_index/resource_index
+[2.336s] creating /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/share/ament_index/resource_index/packages
+[2.336s] copying resource/ekf_tf_bringup -> /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/share/ament_index/resource_index/packages
+[2.336s] copying package.xml -> /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/share/ekf_tf_bringup
+[2.337s] creating /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/share/ekf_tf_bringup/launch
+[2.337s] copying launch/tf_launch.py -> /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/share/ekf_tf_bringup/launch
+[2.337s] creating /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/share/ekf_tf_bringup/urdf
+[2.337s] copying urdf/robot.urdf -> /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/share/ekf_tf_bringup/urdf
+[2.337s] creating /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/share/ekf_tf_bringup/config
+[2.338s] copying config/ekf.yaml -> /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/share/ekf_tf_bringup/config
+[2.338s] creating /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/share/ekf_tf_bringup/map
+[2.338s] copying map/TES.yaml -> /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/share/ekf_tf_bringup/map
+[2.339s] copying map/nav2_params.yaml -> /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/share/ekf_tf_bringup/map
+[2.339s] copying map/TES.pgm -> /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/share/ekf_tf_bringup/map
+[2.341s] copying map/nav2_command.txt -> /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/share/ekf_tf_bringup/map
+[2.342s] running install_egg_info
+[2.345s] Copying ../build/ekf_tf_bringup/ekf_tf_bringup.egg-info to /home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/lib/python3.10/site-packages/ekf_tf_bringup-0.0.0-py3.10.egg-info
+[2.348s] running install_scripts
+[2.409s] writing list of installed files to '/home/heroes/Workspace/ekf_tes/build/ekf_tf_bringup/install.log'
+[2.495s] Invoked command in '/home/heroes/Workspace/ekf_tes/ekf_tf_bringup' returned '0': PYTHONPATH=/home/heroes/Workspace/ekf_tes/build/ekf_tf_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/heroes/Workspace/ekf_tes/install/ekf_tf_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/ekf_tf_bringup build --build-base /home/heroes/Workspace/ekf_tes/build/ekf_tf_bringup/build install --record /home/heroes/Workspace/ekf_tes/build/ekf_tf_bringup/install.log --single-version-externally-managed install_data
